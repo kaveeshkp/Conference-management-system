@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; /* Dashboard light neutral */
+    color: #333; /* Standard dark text */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #003366; /* Dashboard dark blue */
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00509e; /* Dashboard accent blue */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #003d73; /* Hover effect */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s ease; /* Card hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevated effect */
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #003366; /* Header dark blue */
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #555; /* Neutral gray text */
+    margin-bottom: 1.5rem;
+}
+
+.card a {
+    background-color: #00509e; /* Dashboard accent blue */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.card a:hover {
+    background-color: #003d73; /* Hover effect */
+}
+
+/* Footer */
+footer {
+    background-color: #003366; /* Matches header */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+aside.sidebar {
+    width: 220px;
+    height: 100%;
+    background-color: #003366; /* Dashboard dark blue */
+    color: white;
+    padding-top: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside.sidebar a {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    background-color: #00509e; /* Dashboard accent blue */
+    transition: background-color 0.3s ease;
+}
+
+aside.sidebar a:hover {
+    background-color: #003d73; /* Hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    header {
+        padding: 1rem 1rem;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header nav a {
+        margin: 0 0.3rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    aside.sidebar {
+        width: 100%;
+        position: static;
+        box-shadow: none;
+    }
+
+    aside.sidebar a {
+        font-size: 1rem;
+        margin: 0.5rem 1rem;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+}

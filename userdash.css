@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6; /* Improve text readability */
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Ensure header sticks at the top */
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+header nav a:hover {
+    color: #ccc; /* Change link color on hover */
+}
+
+.sidebar {
+    background-color: #003366;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto; /* Allow scrolling for content overflow */
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.sidebar a:hover {
+    background-color: #00509e;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 2rem;
+    min-height: 100vh; /* Ensure full viewport height for layout */
+    background-color: #f9f9f9; /* Match body background for consistency */
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevated effect on hover */
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.card p {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #003366;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}

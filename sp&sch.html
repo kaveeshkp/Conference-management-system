@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Conference Schedule & Speakers</title>
+    <link rel="stylesheet" href="sp&sch.css">
+</head>
+<body>
+    <!-- Schedule Section -->
+    <section id="schedule" class="section bg-light">
+        <div class="container">
+            <h2>Online Conference Schedule</h2>
+            <p>Join the sessions online from anywhere in the world. Click on the session links to participate.</p>
+
+            <!-- Day Tabs -->
+            <div class="tabs">
+                <button class="tab-button active" onclick="showDay('day1')">Day 1</button>
+                <button class="tab-button" onclick="showDay('day2')">Day 2</button>
+                <button class="tab-button" onclick="showDay('day3')">Day 3</button>
+            </div>
+
+            <!-- Schedule Content -->
+            <div id="day1" class="tab-content active">
+                <h3>Day 1 - Opening & Keynotes</h3>
+                <ul>
+                    <li>
+                        <strong>09:00 AM - Opening Ceremony</strong> 
+                        <a href="https://zoom.us/opening-ceremony" target="_blank">Join Online</a>
+                    </li>
+                    <li>
+                        <strong>10:00 AM - Keynote: Engineering and Technology & information technology</strong> by Dr. Alice Smith 
+                        <a href="https://zoom.us/keynote1" target="_blank">Join Online</a>
+                    </li>
+                    <li>
+                        <strong>02:00 PM - Workshop: Engineering and Technology </strong> 
+                        <a href="https://zoom.us/workshop1" target="_blank">Join Online</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="day2" class="tab-content">
+                <h3>Day 2 - Paper Presentations</h3>
+                <ul>
+                    <li>
+                        <strong>09:30 AM - Session: Mathematics and Statistics</strong> 
+                        <a href="https://zoom.us/session1" target="_blank">Join Online</a>
+                    </li>
+                    <li>
+                        <strong>11:00 AM - Panel Discussion: Mathematics </strong> 
+                        <a href="https://zoom.us/panel1" target="_blank">Join Online</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="day3" class="tab-content">
+                <h3>Day 3 - Closing Events</h3>
+                <ul>
+                    <li>
+                        <strong>10:00 AM - Keynote: Business and Economics & Social Sciences and Humanities</strong> by Dr. John Doe 
+                        <a href="https://zoom.us/keynote2" target="_blank">Join Online</a>
+                    </li>
+                    <li>
+                        <strong>01:00 PM - Closing Remarks</strong> 
+                        <a href="https://zoom.us/closing-remarks" target="_blank">Join Online</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="section">
+        <div class="container">
+            <h2>Meet the Speakers</h2>
+            <p>Our esteemed speakers will host sessions online. Click on their profiles for more details.</p>
+    
+            <!-- Speaker Cards -->
+            <div class="speaker-grid">
+                <div class="speaker-card">
+                    <img src="cs.jpg" alt="Dr. Alice Smith">
+                    <h3>Dr. Alice Smith</h3>
+                    <p>Professor of Computer Science, MIT</p>
+                    <p><em>Topic: Engineering and Technology & information technology</em></p>
+                    <a href="https://conference.com/speaker-alice" target="_blank">View Profile</a>
+                </div>
+    
+                <div class="speaker-card">
+                    <img src="bt.jpg" alt="Dr. John Doe">
+                    <h3>Dr. John Doe</h3>
+                    <p>Director of Biotech, Global Labs</p>
+                    <p><em>Topic: Health and Medicine
+                    </em></p>
+                    <a href="https://conference.com/speaker-john" target="_blank">View Profile</a>
+                </div>
+    
+                <div class="speaker-card">
+                    <img src="ms.jpg" alt="Dr. Maria Garcia">
+                    <h3>Dr. Maria Garcia</h3>
+                    <p>Professor of Mathematics and Statistics, Stanford University</p>
+                    <p><em>Topic: Mathematics and Statistics</em></p>
+                    <a href="https://conference.com/speaker-maria" target="_blank">View Profile</a>
+                </div>
+    
+                <div class="speaker-card">
+                    <img src="pb.jpg" alt="Dr. Raj Patel">
+                    <h3>Dr. Raj Patel</h3>
+                    <p>Professor of Bussiness, Deakin University</p>
+                    <p><em>Topic: Business and Economics & Social Sciences and Humanities</em></p>
+                    <a href="https://conference.com/speaker-raj" target="_blank">View Profile</a>
+                </div>
+    
+                <!-- New Speaker 1 -->
+                <div class="speaker-card">
+                    <img src="pl.jpg" alt="Dr. Emily Clarke">
+                    <h3>Dr. Emily Clarke</h3>
+                    <p>Professor of Law, Yale University</p>
+                    <p><em>Topic:Law, Interdisciplinary & Regional Studies </em></p>
+                    <a href="https://conference.com/speaker-emily" target="_blank">View Profile</a>
+                </div>
+    
+                <!-- New Speaker 2 -->
+                <div class="speaker-card">
+                    <img src="cse.jpg" alt="Dr. David Lee">
+                    <h3>Dr. David Lee</h3>
+                    <p>Eng.Computer science and engineering, SecureNet</p>
+                    <p><em>Topic: Engineering Topics</em></p>
+                    <a href="https://conference.com/speaker-david" target="_blank">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="sp&sch.js"></script>
+</body>
+</html>    

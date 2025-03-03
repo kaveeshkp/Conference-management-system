@@ -1,0 +1,149 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; /* Neutral background */
+    color: #333; /* Standard text color */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #003366; /* Conference dark blue */
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00509e; /* Accent blue */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #003d73; /* Darker hover effect */
+}
+
+/* Main Content Section */
+.main-content {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #003366; /* Header dark blue */
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #555; /* Neutral text color */
+    margin-bottom: 1.5rem;
+}
+
+.card button {
+    background-color: #28a745; /* Success green */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Footer Section */
+footer {
+    background-color: #003366; /* Matches header */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.8rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .card button {
+        padding: 0.7rem 1.2rem;
+    }
+}

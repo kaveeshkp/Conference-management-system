@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Animated Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #2b2b2b, #1f1f1f, #121212, #000);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: white;
+    margin: 0;
+    overflow: hidden; /* Prevent body overflow */
+    text-rendering: optimizeLegibility; /* Improve font rendering */
+}
+
+/* Keyframe Animation for Gradient Background */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Login Form Container */
+.login-form {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    z-index: 1;
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Keyframe Animation for Fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Title Styling */
+.login-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #dbc670;
+    letter-spacing: 0.5px; /* Improves title spacing */
+    text-transform: capitalize;
+}
+
+/* Input Group */
+.form-group {
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 15px 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+    font-weight: 400; /* Consistent font weight */
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px; /* Fix placeholder text size */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #dbc670;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+input:focus + label,
+input:not(:placeholder-shown) + label,
+select:focus + label,
+select:not(:placeholder-shown) + label {
+    top: 5px;
+    font-size: 12px;
+    color: #dbc670;
+}
+
+/* Dropdown Text Fix */
+select {
+    color: #fff;
+    padding-right: 40px; /* Space for custom dropdown arrow */
+}
+
+select option {
+    color: #333; /* Option text color */
+}
+
+/* Accessibility Fix for Select Arrow */
+select:after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+}
+
+/* Button Styling */
+button.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #dbc670;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(219, 198, 112, 0.5);
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.submit-btn:hover {
+    background: #e4c95d;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #dbc670, 0 0 40px #dbc670, 0 0 80px #dbc670;
+}
+
+/* Register Link Styling */
+.register-link {
+    margin-top: 10px;
+    font-size: 14px; /* Adjusted for readability */
+    line-height: 1.4;
+}
+
+.register-link a {
+    color: #dbc670;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message */
+.error-message {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.3; /* Improves error message text spacing */
+}

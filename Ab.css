@@ -1,0 +1,145 @@
+/* General reset and styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background: url('kp2.png') no-repeat center center fixed; /* Main background image */
+    background-size: cover; /* Cover entire viewport */
+    position: relative;
+    color: #f1f1f1;
+}
+
+/* Overlay for the background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text contrast */
+    z-index: -1; /* Keeps overlay behind content */
+}
+
+/* About section styling */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the section */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: fadeIn 2s ease-in-out; /* Section fade-in animation */
+}
+
+/* Main container */
+.about .main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    animation: slideUp 1.5s ease-in-out; /* Slide-up animation for the main content */
+}
+
+/* Image styling */
+.about .main img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    margin-right: 20px;
+    animation: fadeIn 0.2s ease-in-out; /* Fade-in animation for the image */
+}
+
+/* About text container */
+.about .main .about-text {
+    max-width: 600px;
+    padding: 20px;
+    animation: slideIn 2s ease-in-out; /* Slide-in animation for the text */
+}
+
+/* Headings and paragraph styling */
+.about .main .about-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+    animation: zoomIn 1.5s ease-in-out; /* Zoom-in effect for the heading */
+}
+
+.about .main .about-text h5 {
+    font-size: 1.5rem;
+    color: #c1c1c1;
+    margin-bottom: 20px;
+    font-weight: 500;
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect for the subheading */
+}
+
+.about .main .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d1d1d1;
+    animation: fadeIn 2.5s ease-in-out; /* Slight delay for the paragraph */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .about .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .main img {
+        margin: 0 0 20px 0;
+    }
+
+    .about .main .about-text {
+        padding: 0;
+    }
+}

@@ -1,0 +1,138 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Main Content Wrapper */
+.main-content {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2, h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Edit and Delete Buttons */
+table a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+table a:first-child {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table a:last-child {
+    background-color: #f44336;
+    color: white;
+}
+
+table a:first-child:hover {
+    background-color: #45a049;
+}
+
+table a:last-child:hover {
+    background-color: #e41e2d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    form input, form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
